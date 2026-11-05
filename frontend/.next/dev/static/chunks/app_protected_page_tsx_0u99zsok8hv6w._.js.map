@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/rn/authX/frontend/app/protected/page.tsx"],"sourcesContent":["\"use client\";\r\nimport Prolay from \"../components/prolay\";\r\nimport Authcon, { useAuth, UseAuth } from \"../context/authcontext\";\r\n\r\nexport default function Pro() {\r\n  const { token, role, loading } = useAuth();\r\n  if (!token) {\r\n    return <p> you have no token</p>;\r\n  }\r\n  if (loading) {\r\n    return <div className=\"loading-spinner\"> stuff are laoding</div>;\r\n  }\r\n  return (\r\n    <div className=\"flex justify-center\">\r\n      {role === \"admin\" && <div className=\"flex\">welcome admin</div>}\r\n      <h1> normal user</h1>\r\n    </div>\r\n  );\r\n}\r\n"],"names":["Pro","token","role","loading","className"],"mappings":";;;;;AAEA;;;AAFA;;AAIe,SAASA;;IACtB,MAAM,EAAEC,KAAK,EAAEC,IAAI,EAAEC,OAAO,EAAE,GAAG,IAAA,4IAAO;IACxC,IAAI,CAACF,OAAO;QACV,qBAAO,6LAAC;sBAAE;;;;;;IACZ;IACA,IAAIE,SAAS;QACX,qBAAO,6LAAC;YAAIC,WAAU;sBAAkB;;;;;;IAC1C;IACA,qBACE,6LAAC;QAAIA,WAAU;;YACZF,SAAS,yBAAW,6LAAC;gBAAIE,WAAU;0BAAO;;;;;;0BAC3C,6LAAC;0BAAG;;;;;;;;;;;;AAGV;GAdwBJ;;QACW,4IAAO;;;KADlBA"}}]
+}

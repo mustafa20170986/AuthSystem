@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/rn/authX/frontend/app/favicon.ico.mjs%20(structured%20image%20object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 48, height: 48 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,mIAAG;IAAEC,OAAO;IAAIC,QAAQ;AAAG"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HP/rn/authX/frontend/app/protected/page.tsx"],"sourcesContent":["import Prolay from \"../components/prolay\";\r\nimport Authcon, { useAuth, UseAuth } from \"../context/authcontext\";\r\n\r\nexport default function Pro() {\r\n  const { token, role, loading } = useAuth();\r\n  if (!token) {\r\n    return <p> you have no token</p>;\r\n  }\r\n  if (loading) {\r\n    return <div className=\"loading-spinner\"> stuff are laoding</div>;\r\n  }\r\n  return (\r\n    <div className=\"flex justify-center\">\r\n      {role === \"admin\" && <div className=\"flex\">welcome admin</div>}\r\n      <h1> normal user</h1>\r\n    </div>\r\n  );\r\n}\r\n"],"names":["Pro","token","role","loading","className"],"mappings":";;;;;AACA;;;AAEe,SAASA;IACtB,MAAM,EAAEC,KAAK,EAAEC,IAAI,EAAEC,OAAO,EAAE,GAAG,IAAA,yIAAO;IACxC,IAAI,CAACF,OAAO;QACV,qBAAO,8OAAC;sBAAE;;;;;;IACZ;IACA,IAAIE,SAAS;QACX,qBAAO,8OAAC;YAAIC,WAAU;sBAAkB;;;;;;IAC1C;IACA,qBACE,8OAAC;QAAIA,WAAU;;YACZF,SAAS,yBAAW,8OAAC;gBAAIE,WAAU;0BAAO;;;;;;0BAC3C,8OAAC;0BAAG;;;;;;;;;;;;AAGV"}}]
+}
